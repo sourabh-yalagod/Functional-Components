@@ -1,0 +1,56 @@
+/* VirtualList.css */
+
+body {
+  margin: 0;
+  background: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.virtual-container {
+  overflow-y: auto;
+  height: 250px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to right, #1e1e1e, #2c2c2c);
+  color: #fff;
+}
+
+/* Size hint: You can control actual dimensions from the component via props */
+
+.virtual-inner {
+  position: relative;
+  width: 100%;
+}
+
+.virtual-item {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 16px;
+  background-color: transparent;
+  transition: background 0.3s ease;
+}
+
+.virtual-item:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.virtual-item:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+}
+
+.virtual-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.virtual-container::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+}
