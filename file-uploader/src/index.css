@@ -1,0 +1,122 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make it full page */
+body, html, #root {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f1f5f9;
+}
+
+.uploader-container {
+  min-height: 100vh;
+  padding: 80px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.upload-box-noDrag {
+  width: 100%;
+  height: 150px;
+  display: grid;
+  border: 1px dashed black;
+  margin-bottom: 30px;
+  place-items: center;
+}
+.upload-box-Drag {
+  width: 100%;
+  height: 150px;
+  display: grid;
+  border: 2px dashed green;
+  background-color: rgb(183, 183, 183);
+  margin-bottom: 30px;
+  place-items: center;
+  transition: 0.3s ease;
+  border-radius: 8px;
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-label {
+  display: inline-block;
+  background-color: #3b82f6;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+  background-color: #2563eb;
+}
+
+.file-preview-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.file-preview-item {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #e5e7eb;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.file-preview-item:hover {
+  transform: translateY(-4px);
+}
+
+.preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.file-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.remove-button {
+  cursor: pointer;
+  font-weight: bold;
+  background-color: rgba(255, 0, 0, 0.7);
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+  background-color: red;
+}
+
+.file-size {
+  opacity: 0.9;
+}
