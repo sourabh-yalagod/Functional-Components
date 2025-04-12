@@ -1,0 +1,103 @@
+/* General Page Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 40px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.stepper-container {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.stepper-step {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.stepper-circle {
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  position: relative;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.stepper-circle-active {
+  border: 2px solid #42d408;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(16, 197, 0);
+  color: black;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  position: relative;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.stepper-line {
+  position: absolute;
+  right: -133%;
+  width: 65px;
+  height: 2px;
+  background-color: #ccc;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.stepper-line-active {
+  position: absolute;
+  right: -133%;
+  width: 65px;
+  height: 3px;
+  background-color: #4fef0b;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.stepper-title {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Button Styles */
+button {
+  margin-top: 40px;
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
