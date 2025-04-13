@@ -1,0 +1,54 @@
+/* Take full page space */
+body {
+  background: #f0f4f8;
+  padding: 20px;
+  height: 100vh;
+  width: 100vw;
+}
+.faq-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centered column layout */
+.faq-wrapper {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Card style */
+.faq-card {
+  background: white;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Header with question and toggle */
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Question styling */
+.faq-question {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Toggle icon */
+.faq-toggle {
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+}
+
+/* Answer text */
+.faq-answer {
+  margin-top: 12px;
+  color: #333;
+}
