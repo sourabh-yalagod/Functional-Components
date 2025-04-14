@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 const Text = ({ text, duration }) => {
   const [displayText, setDispalyText] = useState("");
-  let textRef = useRef({ reverse: false, indice: 0 });
+  let textRef = useRef({ reverse: false, indice: 1 });
   useEffect(() => {
     const textInterval = setInterval(() => {
       const { indice, reverse } = textRef.current;
@@ -26,7 +26,7 @@ const Text = ({ text, duration }) => {
       return () => clearInterval(textInterval);
     }, duration);
   }, []);
-  return <div>{displayText}</div>;
+  return <div className="animated-text">{displayText}|</div>;
 };
 
 export default Text;

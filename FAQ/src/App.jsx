@@ -12,8 +12,14 @@ const App = () => {
   };
 
   return (
-    <div>
-      <Text text={"Questions and Answer"} duration={100} />
+    <div
+      style={{
+        display: "grid",
+        placeItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <Text text={"Questions and Answer"} duration={200} />
       <div className="faq-container">
         <div className="faq-wrapper">
           {faq.qna.map((item, index) => (

@@ -1,0 +1,55 @@
+/* Container to center everything */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full screen */
+  background-color: #f9f9f9;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+/* Input style */
+input[type="text"] {
+  width: 300px;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+/* Results container */
+.search-container {
+  margin-top: 10px;
+  width: 300px;
+  max-height: 250px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  list-style: none;
+}
+
+/* Individual result item */
+.search-item {
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-item:hover {
+  background-color: #f0f0f0;
+}
+
+.search-item-active {
+  background-color: #e0e0e0;
+  font-weight: 500;
+}

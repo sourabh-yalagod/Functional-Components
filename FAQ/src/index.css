@@ -9,6 +9,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 500px;
+  padding-block: 20px;
 }
 
 /* Centered column layout */
@@ -32,6 +34,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 50px;
 }
 
 /* Question styling */
@@ -51,4 +54,25 @@ body {
 .faq-answer {
   margin-top: 12px;
   color: #333;
+}
+
+.animated-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4f46e5; /* Indigo-600 */
+  font-family: "Courier New", Courier, monospace;
+  padding: 10px;
+  white-space: pre;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
